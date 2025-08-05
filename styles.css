@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101010;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #222;
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-item {
+    font-size: 18px;
+    color: #aaa;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    color: #fff;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-profile {
+    position: relative;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #444;
+}
